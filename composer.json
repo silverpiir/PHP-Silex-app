@@ -2,7 +2,11 @@
     "require": {
         "silex/silex": "~2.0",
         "twig/twig": "^2.4",
-        "doctrine/dbal": "~2.2"
+        "doctrine/dbal": "~2.2",
+        "symfony/form": "^3.4",
+        "symfony/twig-bridge": "^3.4",
+        "symfony/config": "^3.4",
+        "symfony/translation": "^3.4"
     },
     
     "autoload": {
