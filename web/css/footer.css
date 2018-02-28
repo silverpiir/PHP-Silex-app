@@ -1,6 +1,6 @@
 .footer {
-    background-color: #D9F8F8;
-    border-top: .25em solid #4CA5A5;
+    background-color: #DDD;
+    border-top: .25em solid #222;
     bottom: 0;
     display: block;
     height: 2.5em;
@@ -13,7 +13,7 @@
 }
 
 .footer-text {
-    color: #4CA5A5;
+    color: #222;
     font-size: 1em;
     padding: .5em;
     -webkit-box-sizing: border-box;

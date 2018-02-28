@@ -1,6 +1,6 @@
 .header {
-    background-color: #D9F8F8;
-    border-bottom: .25em solid #4CA5A5;
+    background-color: #DDD;
+    border-bottom: .25em solid #222;
     display: -webkit-flex;
     display: flex;
     height: 5em;
@@ -11,7 +11,7 @@
 }
 
 .header-heading {
-    color: #4CA5A5;
+    color: #222;
     float: left;
     font-size: 2em;
     font-weight: 700;
