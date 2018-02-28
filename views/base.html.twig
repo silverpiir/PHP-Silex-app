@@ -4,15 +4,25 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="/../web/css/normalize.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="/../web/css/base.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="/../web/css/header.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="/../web/css/footer.css">
+        
+        {% block stylesheets %}
+            <link rel="stylesheet" type="text/css" media="screen" href="/../web/css/normalize.css">    
+            <link rel="stylesheet" type="text/css" media="screen" href="/../web/css/base.css">    
+            <link rel="stylesheet" type="text/css" media="screen" href="/../web/css/header.css">    
+            <link rel="stylesheet" type="text/css" media="screen" href="/../web/css/footer.css">
+        {% endblock %}
+        
         <title>Bookings App</title>
     </head>
     <body>
         {{ include('_header.html.twig') }}
-        <div class="content"><p><h2>HELLO</h2></p></div>
+        
+        <div class="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+        
         {{ include('_footer.html.twig') }}
     </body>
+    {% block javascripts %}{% endblock %}
 </html>

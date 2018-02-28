@@ -6,3 +6,20 @@
 [28-Feb-2018 07:42:06 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/web../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/web/index.php on line 4
 [28-Feb-2018 07:42:23 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/web../vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/web/index.php on line 4
 [28-Feb-2018 07:42:23 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/web../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/web/index.php on line 4
+[28-Feb-2018 10:04:20 UTC] PHP Notice:  Undefined property: BookingApp\Application::$formFactory in /home/ubuntu/workspace/src/Application.php on line 75
+[28-Feb-2018 10:04:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function createBuilder() on null in /home/ubuntu/workspace/src/Application.php:75
+Stack trace:
+#0 /home/ubuntu/workspace/src/Application.php(29): BookingApp\Application->configureControllers()
+#1 /home/ubuntu/workspace/web/index.php(8): BookingApp\Application->__construct()
+#2 {main}
+  thrown in /home/ubuntu/workspace/src/Application.php on line 75
+[28-Feb-2018 10:08:40 UTC] PHP Notice:  Undefined property: BookingApp\Application::$formFactory in /home/ubuntu/workspace/src/Application.php on line 75
+[28-Feb-2018 10:08:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function createBuilder() on null in /home/ubuntu/workspace/src/Application.php:75
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php(151): BookingApp\Application->BookingApp\{closure}()
+#1 /home/ubuntu/workspace/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#2 /home/ubuntu/workspace/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#3 /home/ubuntu/workspace/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#4 /home/ubuntu/workspace/web/index.php(10): Silex\Application->run()
+#5 {main}
+  thrown in /home/ubuntu/workspace/src/Application.php on line 75
