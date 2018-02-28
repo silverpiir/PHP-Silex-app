@@ -10,12 +10,16 @@
             <link rel="stylesheet" type="text/css" media="screen" href="/../web/css/base.css">    
             <link rel="stylesheet" type="text/css" media="screen" href="/../web/css/header.css">    
             <link rel="stylesheet" type="text/css" media="screen" href="/../web/css/footer.css">
+            <link rel="stylesheet" type="text/css" media="screen" href="/../web/css/menu.css">
+
+
         {% endblock %}
         
         <title>Bookings App</title>
     </head>
     <body>
         {{ include('_header.html.twig') }}
+        {{ include('_menu.html.twig') }}
         
         <div class="content">
             {% block content %}
